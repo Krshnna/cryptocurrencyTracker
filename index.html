@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoCurrency Price Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Cryptocurrency Tracker</h1>
+      </div>
+      <form class="coins">
+        <label for="coinType">Coin Type</label>
+        <select name="coinType" id="coinType">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="dogecoin">Dogecoin</option>
+          <option value="ethereum">Ethereum</option>
+          <option value="tether">Tether</option>
+          <option value="aave">AAVE</option>
+          <option value="maker">Maker</option>
+          
+        </select>
+        <button type="submit" class="btn">Get Price</button>
+      </form>
+
+      <div class="table-container active">
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td class="name"></td>
+            <td class="price"></td>
+          </tr>
+          <tr>
+            <td>Volume(24HR)</td>
+            <td class="vol">28293</td>
+          </tr>
+          <tr>
+            <td>Change(24HR)</td>
+            <td class="change"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* word-wrap: break-word; */
+    word-wrap: none;
+}
+
+body{
+    background-color: rgba(49, 49, 137, 0.466);
+    overflow: hidden;
+    position: absolute;;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: rgba(56, 39, 39, 0.75);
+}
+.coins {
+    display: inline;
+    position: relative;
+    border-radius: 5px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%) translateY(50%);
+    top: 27%;
+    left: 50%;
+    width: 51vw;
+    height: 28vh;
+    padding: 20px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, .3); 
+}
+.coins label {
+    font-size: 20px;
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 50%;
+    margin: 10px;
+}
+#coinType {
+    position: absolute;
+    width: 95%;
+    top: 35%;
+    left: 2%;
+    height: 35px;
+    border-radius: 6px;
+    outline: none;
+    border: .8px solid rgb(173, 152, 152);
+    box-shadow: 2px 3px 5px rgba(0,0,0,.3);
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: rgb(102, 93, 93);
+    padding: 5px;
+}
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: azure;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 3px 4px 5px rgba(0,0,0,.3);
+    margin-top: 15px;
+}
+.btn:hover {
+    background-color: rgb(218, 192, 242);
+    border: 1px solid rgb(118, 111, 111);
+    box-shadow: 3px 4px 5px rgba(0,0,0,.3);
+}
+
+.table-container {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(177, 166, 184, 0.936);
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+    width: 24%;
+}
+table, th, tr, td{
+    font-family: cursive;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    
+}
+
+th, td {
+
+    border: 1px solid black;
+}
+td {
+    padding: 4px;
+}
+th {
+    background-color: rgb(205, 174, 174);
+    height: 10px;
+    padding: 10px;
+    margin-left: 0px;
+    width: 60%;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+tr:nth-child(odd) {
+    background-color: aqua;
+}
+
+.active.table-container {
+    transition: ease-in 0.3s;
+    visibility: hidden;
+}
